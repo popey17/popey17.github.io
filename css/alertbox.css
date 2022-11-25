@@ -1,0 +1,66 @@
+#alertbox{
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 99;
+    display: none;
+    
+}
+
+#alertbox .content {
+    width: 35rem;
+    height: 15rem;
+    background: #19191a;
+    border: white solid 1px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+#alertbox .content span {
+    text-align: center;
+    font-size: 2rem;
+    line-height: 10rem;
+    display: block;
+}
+
+#alertbox .content button {
+    color: black;
+    height: 2rem;
+    width: 4rem;
+    float: right;
+    margin-right: 2rem;
+}
+
+@media (max-width:999px) {
+    #alertbox .content {
+        width: 30rem;
+        height: 12rem;
+    }
+    #alertbox .content span {
+        font-size: 1.5rem;
+        line-height: 8rem;
+    }
+    #alertbox .content button {
+        height: 1.8rem;
+        width: 3.5rem;
+    }
+}
+
+@media (max-width:576px) {
+    #alertbox .content {
+        width: 25rem;
+        height: 10rem;
+    }
+    #alertbox .content span {
+        font-size: 1.5rem;
+        line-height: 6rem;
+    }
+    #alertbox .content button {
+        height: 1.8rem;
+        width: 3.5rem;
+    }
+}

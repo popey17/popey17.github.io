@@ -1,0 +1,43 @@
+#profile-pic {
+    position: relative;
+    animation: 3s ease-out 1s 1 transitionUp;
+}
+#profile {
+    position: relative;
+    animation: 3s ease-out 1s 1 transitionLeft;
+}
+@keyframes transitionUp {
+    from {
+        opacity: 0;
+        top: 10rem;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+@keyframes transitionLeft {
+    from {
+        opacity: 0;
+        left: 10rem;
+    }
+
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}

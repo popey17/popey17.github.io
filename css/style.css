@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+#preloader {
+    background: rgba(19,17,16,255) url(../resources/page_resources/loader.gif) no-repeat center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+#return-btn {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    background: black;
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 99;
+    text-align: center;
+    line-height: 5rem;
+    box-shadow: white;
+    font-size: 2rem;
+}
+#return-btn:hover {
+    border: white 1px solid;
+    bottom: 1.5rem;
+}
+
+body {
+    background: #19191a;
+    position: relative;
+}
+
+#navbar nav a img {
+    margin: 1rem 0 0 2rem;
+}
+
+#navMenu {
+    color: white;
+}
+
+#navbarNav ul{
+   margin:1rem 0 0 1.5rem;
+}
+
+#home {
+    overflow: hidden;
+}
+
+#home .row {
+    margin: 2rem 0;
+}
+
+#profile-pic{
+    width: 25%;
+    margin: auto;
+    padding-left: 0;
+}
+#profile-pic img{
+    width: 100%;
+    padding-left: 0;
+}
+
+#profile #name {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:end;
+    margin: auto;
+}
+
+#name div.top {
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+#name div.bottom {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+#name div.bottom span {
+    font-family: 'Montserrat', sans-serif;
+    color: aqua;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+#about .title {
+    font-size: 5rem;
+    padding-left: 10rem;
+    margin-bottom: 3rem;
+}
+#about .content .left{
+    border-right: white solid 1px;
+}
+
+#about .content .right {
+    width: 60%;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}   
+
+#about .content .right>div {
+    font-size: 1.8rem;
+    color: aqua;
+    font-weight: 400;
+}
+
+#about .skill {
+    width: 50%;
+    margin: 9rem auto;
+    font-size: 8rem;
+    text-align: center;
+}
+#work .title {
+    font-size: 5rem;
+    padding-left: 10rem;
+    margin-bottom: 3rem;
+}
+
+#work .body .row .left {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+#work .body .row .left .content{
+    /* border: white solid 2px; */
+    width: 70% ;
+}
+
+#work .body .row .right {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+#work .body .row .left .content a img {
+    width: 100%;
+}
+
+#contact .title {
+    font-size: 5rem;
+    padding-left: 10rem;
+    margin-bottom: 3rem;
+    
+}
+
+#contact .body .left {
+    font-size: 1.5rem;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-weight: 200; */
+}
+
+#contact .body .left div{
+    border-right: white solid 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding:2rem 3rem 2rem 0;
+}
+
+#contact .body .right {
+    font-size: 1.5rem;
+    width: 30%;
+    margin-left: 2rem;
+}
+
+#contact .body .right div {
+    margin-bottom: 2rem;
+}
+
+#contact .body .right form div input,#contact .body .right form div textarea {
+    background-color: rgba(255, 255, 255, 0);
+    border: white 1px solid;
+    border-radius: 0;
+    color: white;
+}
+
+#contact .body .right form div input:focus,#contact .body .right form div textarea:focus {
+    background: rgb(59, 59, 59);
+}
+
+#contact .body .right form button {
+    float: right;
+}
+
+#contact .body .left div a {
+    text-decoration: none;
+    color: white;
+}
+#footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    /* padding-top: 3rem; */
+    margin: 2rem 0 ;
+}
+
+@media (max-width:1160px) {
+    #name div.top {
+        font-size: 2.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    
+    #name div.bottom {
+        font-size: 1.3rem;
+        font-family: 'Montserrat', sans-derif;
+        font-weight: 200;
+    }
+    #name div.bottom span {
+        font-family: 'Montserrat', sans-serif;
+        color: aqua;
+        font-weight: 800;
+        font-size: 1.6rem;
+    }
+    #about .skill {
+        width: 70%;
+        font-size: 9rem;
+    }
+    #contact .body .right {
+        width: 40%;
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width:999px) {
+    #return-btn{
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+    }
+    #navbar nav a img {
+        margin: .5rem 0 0 0.5rem;
+    }
+    #name div.top {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    
+    #name div.bottom {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+    #name div.bottom span {
+        font-family: 'Montserrat', sans-serif;
+        color: aqua;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    #profile-pic{
+        width: 50%;
+        margin: auto;
+        padding-left: 0;
+    }
+    #profile-pic img{
+        width: 100%;
+        padding-left: 0;
+    }
+    #profile #name {
+        width: 100%;
+    }
+
+    #about {
+        height: 100%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content:end;
+        margin: auto;
+
+    }
+    #about .title {
+        font-size: 5rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+    #about .content .right {
+        width: 100%;
+        font-size: 1rem;
+        margin: auto;
+    }
+    #about .skill {
+        width: 100%;
+        margin: 3rem auto;
+        font-size: 6rem;
+        text-align: center;
+    }
+    #about .content .right>div {
+        font-size: 1.5rem;
+        color: aqua;
+        font-weight: 400;
+    }
+    #work {
+        width: 80%;
+        margin: auto;
+    }
+    #work .title {
+        font-size: 5rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+    #work .body .row .left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    #work .body .row .right {
+        font-size: 1.5rem;
+        display: unset;
+        text-align: center;
+    }
+    #contact {
+        width: 80%;
+        margin: auto;
+    }
+    #contact .title {
+        font-size: 5rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
+        
+    }
+    #contact .body .left {
+        /* border-bottom: white 1px solid ; */
+        margin-bottom: 2rem;
+    }
+    #contact .body .left div{
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:2rem 3rem;
+    }
+    
+    #contact .body .right {
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    #contact .body .right div {
+        margin-bottom: 2rem;
+    }
+    
+}
+
+@media (max-width:576px) {
+    #return-btn{
+        height: 3rem;
+        width: 3rem;
+        line-height: 3rem;
+    }
+    #navbar nav a img {
+        margin: 0;
+    }
+    #navbar ul {
+        margin: 0;
+    }
+    #profile-pic{
+        width: 60%;
+        margin: auto;
+        padding-left: 0;
+    }
+    #profile-pic img{
+        width: 100%;
+        padding-left: 0;
+    }
+    #name div.top {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+    }
+    
+    #name div.bottom {
+        font-size: 1rem;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 200;
+    }
+    #name div.bottom span {
+        font-family: 'Montserrat', sans-serif;
+        color: aqua;
+        font-weight: 800;
+        font-size: 1.3rem;
+    }
+    #profile #name {
+        width: 100%;
+    }
+
+    #about {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    #about .title {
+        font-size: 3rem;
+        padding-left: 0;
+        margin-bottom: 2rem;
+    }
+    #about .content .right {
+        width: 100%;
+        font-size: 1.2rem;
+        margin: auto;
+    }
+    #about .skill {
+        width: 100%;
+        margin: 3rem auto;
+        font-size: 6rem;
+        text-align: center;
+    }
+    #about .content .right>div {
+        font-size: 1.5rem;
+        color: aqua;
+        font-weight: 400;
+    }
+    #work {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    #work .title {
+        font-size: 3rem;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    #contact {
+        width: 100%;
+    }
+    #contact .row .title {
+        font-size: 3rem;
+        padding-left: 1rem;
+        margin-bottom: 2rem;
+    }
+    #contact .body .left {
+        font-size: 1.2rem;
+    }
+    #contact .body .right div {
+        font-size: 1rem;
+    } 
+    
+}
