@@ -130,27 +130,49 @@ body {
     margin-bottom: 3rem;
 }
 
-#work .body .row .left {
+#work .body .titleRight .left{
     display: flex;
     align-items: center;
     justify-content: flex-end;
 
+    
 }
 
-#work .body .row .left .content{
+#work .body .titleLeft .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#work .body .titleRight .left .content,
+#work .body .titleLeft .right .content{
     /* border: white solid 2px; */
     width: 70% ;
 }
 
-#work .body .row .right {
+#work .body .titleLeft .left {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+#work .body .titleLeft .left .content {
+    width: 70%;   
+    font-size: 3rem;
+}
+
+
+#work .body .titleRight .right {
     font-size: 3rem;
     display: flex;
     align-items: center;
 }
 
-#work .body .row .left .content a img {
+#work .body .titleRight .left .content a img,
+#work .body .titleLeft .right .content a img {
     width: 100%;
 }
+
 
 #contact .title {
     font-size: 5rem;
